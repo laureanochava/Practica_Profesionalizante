@@ -1,0 +1,220 @@
+:root{
+    --naranja1: #ffa333; 
+    --naranja2: #fbac64;
+    --naranja3: #ffd19b;
+    --naranja4: #ffe8cd;
+    --blanco: #fff; 
+    --oscuro: #311f11 ;
+
+    --titulos: 'Montserrat';
+    --parrafo: 'Mulish';  
+    --HaM: 'Fasthand'; 
+   
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden ;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+/* Globales*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+h1,h2{
+    font-family: var(--titulos); 
+}
+h3,p,a{
+    font-family: var(--parrafo);
+}
+
+.ocultar{
+    display: none;
+}
+.btnCerrar{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--oscuro);
+    position: absolute;
+    top:0;
+    right:50px;
+    user-select: none;
+}
+.btnCerrar:hover{
+    cursor: pointer;
+}
+.pantalla-completa{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0,.5);
+    z-index: 4;
+}
+
+@keyframes desplazamiento{
+    0%{
+        transform: translatex(100%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--naranja4);
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    padding: 1rem 3rem;
+    border-radius: 7px;
+    transition: all .2s ease-in-out;
+}
+@media(max-width: 768px){
+    .btn{
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+
+    }
+    
+
+}
+.bordes{
+    border: 2px solid var(--naranja4);
+    margin-top: 3rem;
+}
+.bordes:hover{
+    color: var(--oscuro);
+    background-color: var(--naranja2);
+}
+
+/* Encabezado*/
+
+.contenedor-navegacion{
+    background-color: var(--naranja2);
+    position: relative;
+    z-index: 5;
+    border-color: var(--naranja1);
+    border-style: solid;
+    border-width: 1.2px;
+}
+.logochico{
+    width: 100px;
+    height: 100px;
+} 
+.contenido-navegacion{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.navegacion a{
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1.5rem;
+    display: block;   
+    text-align: center;
+    padding-left: 3rem;
+}
+@media(min-whidth: 768px){
+    .navegacion a{
+        text-align: left;
+        font-size: 2rem;
+    }
+}
+
+.navegacion a:first-of-type{
+    margin-top: 5rem;
+}
+.navegacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    height: 100vh;
+    width: 40rem;
+    padding: 3rem 4rem;
+    background-color: var(--naranja2); 
+    animation: desplazamiento .5s ease-in-out;
+    border-color: var(--naranja1);
+    border-style: solid;
+    border-width: 1.2px;
+}
+
+
+/*Menu hamburguesa*/
+.menuh:hover{
+    cursor: pointer;
+}
+
+
+.menuh span{
+    background-color: var(--oscuro);
+    display: block;
+    width: 5rem;
+    height: .5rem;
+    margin-bottom: .7rem;
+}
+
+/*video*/
+.contenido-header{
+    position: relative;
+}
+.contenido-header::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.texto-encabezado{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logovideo{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border-color: #ffa333;
+    border-style: solid; 
+    margin-top: 60px;
+} 
+@media(max-width: 768px){
+    .logovideo{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border-color: #ffa333;
+        border-style: solid;
+        margin-top: 60px;
+    }
+}
+
