@@ -7,47 +7,232 @@
     <title>LALA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish&display=swap" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
 
   <body>
     <header class="encabezado">
-        <div class="contenedor-navegacion">
-            <div class="contenido-navegacion contenedor">
-                <div class="logo">
-                    <img src="assets/Logo.jpg" alt="Logo de la pagina" class="logochico">
-                </div>
-                <nav class="navegacion ocultar">
-                    <a href="#">Inicio</a>
-                    <a href="#">Catalogo</a>
-                    <a href="#">Sobre Nosotros</a>
-                    <a href="#">Contacto</a> 
-                </nav>
-                <div class="menuh">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
+      <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <img
+              data-src="assets/Logo.webp"
+              alt="Logo de la pagina"
+              class="logochico"
+            />
+          </div>
+          <nav class="navegacion ocultar">
+            <a href="#">Inicio</a>
+            <a href="#">Catalogo</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Contacto</a>
+          </nav>
+          <div class="menuh"><span></span><span></span><span></span></div>
         </div>
-         <div class="contenido-header">
-            <div class="contenedor-encabezado">
-                <div class="texto-encabezado">
-                    <img src="/assets/Logo.jpg" alt="" class="logovideo">
-                    <a href="#" class="btn bordes">Catálogo</a>
-                </div>
-                <video autoplay loop muted>
-                    <source src="assets/Video.mp4">
-                </video>
-            </div>
-           
-         </div>
+      </div>
+      <div class="contenido-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado">
+            <img data-src="/assets/Logo.webp" alt="" class="logovideo" />
+            <a href="#" class="btn bordes">Catálogo</a>
+          </div>
+          <video autoplay loop muted>
+            <source src="assets/Video.mp4" />
+          </video>
+        </div>
+      </div>
     </header>
 
-    <script src="js/app.js"></script>
+    <div class="contenedor-nosotros contenedor">
+      <div class="texto-nosotros">
+        <h1 class="L">LALA</h1>
+        <h2 class="hm">Hecho a Mano</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          recusandae at excepturi perferendis porro maiores expedita voluptatum
+          officiis itaque magnam explicabo a non distinctio voluptate quam.
+          Doloribus minus tempore reiciendis.
+        </p>
+      </div>
+      <div class="imangenes-nosotros">
+        <div class="imagen1">
+            <img data-src="/assets/LALA imagen-ejemplo-nosotros.webp" alt="">
+        </div>
+      </div>
+    </div>
 
+    <section class="menu contenedor"> 
+            <h2 class="texto-catalogo">Catálogo</h2> 
+            <div class="botones-catalogo">
+                <button class="todos btn-cat">Todos</button>
+                <button class="ropa btn-cat">Ropa</button>
+                <button class="tazas btn-cat">Tazas</button>
+                <button class="mates btn-cat">Mates</button>
+                <button class="acc btn-cat">Accesorios</button>
+            </div>
+            <div class="catalogo">
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="ropa"> 
+                    <img class="i" data-src="/assets/BodyBebe.webp" alt="Body"> 
+                    <h2>Body para bebés</h2>
+                    <p>Encargo con un minimo de 48hs de anticipación.</p>
+                    <div class="precio">
+                        <p>$900</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="ropa"> 
+                    <img class="i" data-src="/assets/Remeras.webp" alt="remera-niño"> 
+                    <h2>Remera para niños</h2>
+                    <p>Encargo con un minimo de 48hs de anticipación.</p>
+                    <div class="precio">
+                        <p>$1.500</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="ropa"> 
+                    <img class="i" data-src="/assets/Gorra.webp" alt="Gorra"> 
+                    <h2>Gorra</h2>
+                    <p>Encargo con un minimo de 48hs de anticipación.</p>
+                    <div class="precio">
+                        <p>$1.500</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="tazas"> 
+                    <img class="i" data-src="/assets/Taza.webp" alt="Taza"> 
+                    <h2>Gorra</h2>
+                    <p>Encargo con un minimo de 48hs de anticipación.</p>
+                    <div class="precio">
+                        <p>$950</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="tazas"> 
+                    <img class="i" data-src="/assets/TazasMagicas.webp" alt="Taza Magica"> 
+                    <h2>Taza Mágica</h2>
+                    <p>Encargo con un minimo de 48hs de anticipación.</p>
+                    <div class="precio">
+                        <p>$1.300</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="tazas"> 
+                    <img class="i" data-src="/assets/TazaTermica.webp" alt="Taza Termica"> 
+                    <h2>Jarro Térmico</h2>
+                    <p>Encargo con un minimo de 48hs de anticipación.</p>
+                    <div class="precio">
+                        <p>$800</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="mates"> 
+                    <img class="i" data-src="/assets/Mate2.webp" alt="Mate"> 
+                    <h2>Mate de Algarrobo pintado a mano.</h2>
+                    <p>Encargo con un minimo de 7 días de anticipación.</p>
+                    <div class="precio">
+                        <p>$800</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="mates"> 
+                    <img class="i" data-src="/assets/Despolvilladores.webp" alt="despolvillador"> 
+                    <h2>Despolvilladores de Yerba</h2>
+                    <p>Consultar stock</p>
+                    <div class="precio">
+                        <p>$800</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="mates"> 
+                    <img class="i" data-src="/assets/Yerbero.webp" alt="yerbero"> 
+                    <h2>Yerbera</h2>
+                    <p>Consultar disponibilidad de diseño.</p>
+                    <div class="precio">
+                        <p>$700</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="acc"> 
+                    <img class="i" data-src="/assets/HuesoParaCollar.webp" alt="Huesito"> 
+                    <h2>Huesito de Polimero.</h2>
+                    <p>Ideal para tus mascotas, podés colocar su nombre, un número de contato y dirección de su dueño. </p>
+                    <div class="precio">
+                        <p>$300</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="acc"> 
+                    <img class="i" data-src="/assets/Llaveros.webp" alt="llavero"> 
+                    <h2>Llaveros de Polimero.</h2>
+                    <p>Cantidad mínima 10 unidades, consultar formas. </p>
+                    <div class="precio">
+                        <p>$200</p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+                <div class="articulo" data-articulo="acc"> 
+                    <img class="i" data-src="/assets/FotosPolaroid.webp" alt="polaroid"> 
+                    <h2>Fotos Polaroid.</h2>
+                    <p>
+                        Encargo con un minimo de 48hs de anticipación.
+                        Consultar tamaño y precio. 
+                    </p>
+                    <div class="precio">
+                        <p></p>
+                        <button>
+                            Encargar
+                        </button>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------>
+            </div>
+    </section>
+
+    <script src="js/app.js"></script> 
   </body>
 </html>

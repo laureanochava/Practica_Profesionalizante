@@ -9,7 +9,7 @@
     --titulos: 'Montserrat';
     --parrafo: 'Mulish';  
     --HaM: 'Fasthand'; 
-   
+    background-color: #ffe8cd;
 }
 html{
     box-sizing: border-box;
@@ -25,6 +25,7 @@ body{
     box-sizing: inherit;
 }
 
+/*------------------------------------------------------------------------------------------------------------*/
 /* Globales*/
 .contenedor{
     max-width: 120rem;
@@ -100,6 +101,11 @@ h3,p,a{
     background-color: var(--naranja2);
 }
 
+img{
+    max-width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
 /* Encabezado*/
 
 .contenedor-navegacion{
@@ -155,6 +161,7 @@ h3,p,a{
 }
 
 
+/*------------------------------------------------------------------------------------------------------------*/
 /*Menu hamburguesa*/
 .menuh:hover{
     cursor: pointer;
@@ -169,6 +176,7 @@ h3,p,a{
     margin-bottom: .7rem;
 }
 
+/*------------------------------------------------------------------------------------------------------------*/
 /*video*/
 .contenido-header{
     position: relative;
@@ -217,4 +225,187 @@ video{
         margin-top: 60px;
     }
 }
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*Sobre Nosotros*/
+
+
+.contenedor-nosotros{
+    padding-top: 5rem;
+}
+
+@media(min-width: 768px){
+    .contenedor-nosotros{
+        display: flex ;
+        justify-content: space-between;
+    }
+
+}
+.texto-nosotros, .imagenes-nosotros{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.imagen1{ 
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    
+}
+
+@media(min-width: 768px){
+    .imagen1{
+        width: 500px;
+        height: 333px;
+        border-radius: 15px;
+        margin-top: 1rem;
+        margin-bottom: -19rem;
+    }
+
+}
+
+.texto-nosotros p{
+    font-size: 2rem;
+    text-align: left;
+    margin: 4rem 2rem;
+    color: var(--oscuro); 
+}
+
+.texto-nosotros h1{
+    font-size: 4rem;
+    text-align: left;
+    margin: 1rem;
+    color: var(--oscuro); 
+}
+
+.texto-nosotros h2{
+    font-size: 3rem;
+    text-align: left;
+    margin: 1rem;
+    color: var(--oscuro); 
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*Catalogo*/
+/*Titulo*/
+.texto-catalogo{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--oscuro); 
+}
+ 
+/*------------------------------------------------------------------------------------------------------------*/
+/*Menu*/
+.menu{
+    padding-top: 4rem;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*Botones del menu del catalogo*/ 
+
+.botones-catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.botones-catalogo button{
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem 3rem;
+}
+
+@media(min-width: 768px){
+    .botones-catalogo{
+        display: inline-block;
+    }
+    
+    .botones-catalogo button{
+        flex: unset;
+    }
+
+}
+
+.botones-catalogo .btn-cat{
+    display: inline-block;
+    background-color: var(--naranja2);
+    font-size: 2rem;
+    color: var(--oscuro);
+    border-radius: .5rem;
+    border-color: var(--naranja1);
+    border-width: .5px;
+    border-style: solid;
+    margin-bottom: 2rem; 
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*Articulos del catalogo*/
+
+@media(min-width: 768px){
+    .catalogo{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+
+.articulo{
+    flex: 0 0 calc(33.3% - 1rem);
+    border:  1px solid var(--oscuro); 
+    padding: 2rem;
+    border-radius: 5px; 
+    margin-bottom: 1rem;
+}
+
+.catalogo .i{
+    width: 500px;
+    height: 300px;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*Titulo del articulo y descripcion*/
+
+.articulo h2{
+    text-align: center;
+    color: var(--oscuro);
+
+}
+
+.articulo p{
+    font-size: 1.5 rem;
+    font-style: oblique;
+    color: var(--oscuro);
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*Precio*/
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.precio p{
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--oscuro);
+}
+
+.precio button{
+    
+    padding: 1rem;
+    background-color: var(--naranja2);
+    font-size: 2rem;
+    color: var(--oscuro);
+    border-radius: .5rem;
+    border-color: var(--naranja1);
+    border-width: .5px;
+    border-style: solid;
+    margin-bottom: 2rem; 
+}
+
+
+
 
