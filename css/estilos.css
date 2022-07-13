@@ -337,6 +337,11 @@ video{
     margin-bottom: 2rem; 
 }
 
+.botones-catalogo .btn-cat:hover{
+    background-color: #311f11;
+    color: var(--naranja2);
+}
+
 /*------------------------------------------------------------------------------------------------------------*/
 /*Articulos del catalogo*/
 
@@ -406,6 +411,9 @@ video{
     margin-bottom: 2rem; 
 }
 
-
+.precio button:hover{
+    background-color: #311f11;
+    color: #ffd19b;
+}
 
 

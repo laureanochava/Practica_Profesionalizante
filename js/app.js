@@ -1,13 +1,14 @@
 const menu = document.querySelector('.menuh'); 
 const navegacion = document.querySelector('.navegacion'); 
 const imagenes = document.querySelectorAll('img'); 
+
 const btnTodos = document.querySelector('.todos');
 const btnRopa = document.querySelector('.ropa');
 const btnTazas = document.querySelector('.tazas');
 const btnMates = document.querySelector('.mates');
 const btnAcc = document.querySelector('.acc');
 
-const contenedorArticulos = document.querySelector('.articulos');
+const contenedorArticulos = document.querySelector('.catalogo');
 
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -42,13 +43,14 @@ const observer = new IntersectionObserver((entries, observer)=>{
     entries.forEach(entry => {
         if(entry.isIntersecting){
             const imagen = entry.target; 
+            imagen.src = imagen.dataset.src;
             observer.unobserve(imagen);
         }
     });
 });
 
 imagenes.forEach(imagen=>{
-    imagen.src = imagen.dataset.src; 
+     
     observer.observe(imagen); 
 });
 
@@ -68,18 +70,45 @@ const cerrarMenu =(boton, overley)=> {
 
 const articulos = () => {
     let articulosArreglo = []; 
+
     const articulos = document.querySelectorAll('.articulo');  
     articulos.forEach(articulo => articulosArreglo = [...articulosArreglo,articulo] );
-    const ropa = articulosArreglo.filter(ropa => ropa.getAttribute('data-articulo') === 'ropa'); 
-    const tazas = articulosArreglo.filter(tazas => tazas.getAttribute('data-articulo') === 'tazas'); 
-    const mates = articulosArreglo.filter(mates => mates.getAttribute('data-articulo') === 'mates'); 
-    const acc = articulosArreglo.filter(acc => acc.getAttribute('data-articulo') === 'acc'); 
 
-    mostrarArticulos(ropa, tazas, mates, acc); 
+    const ropa2 = articulosArreglo.filter(ropa => ropa.getAttribute('data-articulo') === 'ropa1'); 
+    const tazas2 = articulosArreglo.filter(tazas => tazas.getAttribute('data-articulo') === 'tazas1'); 
+    const mates2 = articulosArreglo.filter(mates => mates.getAttribute('data-articulo') === 'mates1'); 
+    const acc2 = articulosArreglo.filter(acc => acc.getAttribute('data-articulo') === 'acce1'); 
+
+    mostrarArticulos(ropa2, tazas2, mates2, acc2, articulosArreglo); 
 }
 
-const mostrarArticulos = (ropa, tazas, mates, acc) =>{
+const mostrarArticulos = (ropa2, tazas2, mates2, acc2, todos) =>{
         btnRopa.addEventListener('click', ()=>{
-            ropa.forEach(ropa=> contenedorArticulos.appendChild(ropa));
-    })
+            limpiarHtml(contenedorArticulos); 
+            ropa2.forEach(ropa=> contenedorArticulos.appendChild(ropa)); 
+          });
+          btnTazas.addEventListener('click', ()=>{
+            limpiarHtml(contenedorArticulos); 
+            tazas2.forEach(tazas=> contenedorArticulos.appendChild(tazas)); 
+          });
+          btnMates.addEventListener('click', ()=>{
+            limpiarHtml(contenedorArticulos); 
+            mates2.forEach(mates=> contenedorArticulos.appendChild(mates)); 
+          });
+          btnAcc.addEventListener('click', ()=>{
+            limpiarHtml(contenedorArticulos); 
+            acc2.forEach(acc=> contenedorArticulos.appendChild(acc)); 
+          });
+          btnTodos.addEventListener('click', ()=>{
+            limpiarHtml(contenedorArticulos); 
+            todos.forEach(todo=> contenedorArticulos.appendChild(todo)); 
+          });
+}
+
+const limpiarHtml = (contenedor) =>{
+    while (contenedor.firstChild){
+        contenedor.removeChild(contenedor.firstChild);
+
+
+    }
 }
