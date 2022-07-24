@@ -249,6 +249,7 @@ video{
     max-width: 100%;
     width: 300px;
     height: 300px;
+    margin-top: 20rem;
     
 }
 
@@ -292,12 +293,13 @@ video{
     text-align: center;
     font-size: 5rem;
     color: var(--oscuro); 
+   
 }
  
 /*------------------------------------------------------------------------------------------------------------*/
 /*Menu*/
 .menu{
-    padding-top: 4rem;
+    padding-top: 16rem;
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
@@ -408,7 +410,8 @@ video{
     border-color: var(--naranja1);
     border-width: .5px;
     border-style: solid;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
+    margin-top: 4rem; 
 }
 
 .precio button:hover{
@@ -416,4 +419,81 @@ video{
     color: #ffd19b;
 }
 
+/*------------------------------------------------------------------------------------------------------------*/
+/*Contactos*/
+
+
+.informacion-contacto {
+    flex: 0 0 calc(50% - 1rem);
+    text-align: center; 
+    background-color: #311f11;
+    height: 37rem;
+    border-radius: 5px;
+}
+.informacion-contacto h3, p, i{
+    color: #fbac64; 
+    height: 3rem;
+    padding-top: 3rem;
+}
+
+.informacion-contacto h3{
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+.informacion-contacto p{
+    font-size: 2rem;
+}
+.informacion-contacto i{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.redes-sociales{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 5rem;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*Pie de Pagina*/
+
+@media(min-width: 768px){
+    .contenedor-piepagina{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.info{
+    flex: 0 0 calc(25 - 1rem);
+    border: #311f11 solid;
+    border-width: .5px;
+    border-radius: 5px; 
+    padding: 2rem 5rem;
+    border-color: #311f11;
+    margin-bottom: 2rem;
+}
+.info h3, .info p{
+    color: #311f11;
+    text-align: center;
+}
+.info h3{
+    font-size: 1.5rem;
+}
+.pie-pagina{
+    margin-top: 5rem;
+    background-color: #ffa333;
+    padding: 5rem;
+}
+
+.footer{
+    text-align: center;
+    background-color: #ffa333;
+    color: #311f11;
+    padding: 2rem;
+}
+
+.footer h3{
+    font-size: 1rem;
+}
 
