@@ -30,57 +30,63 @@
   </head>
 
   <body>
-    <header class="encabezado">
-      <div class="contenedor-navegacion">
-        <div class="contenido-navegacion contenedor">
-          <div class="logo">
-            <img
-              data-src="assets/Logo.webp"
-              alt="Logo de la pagina"
-              class="logochico"
-            />
-          </div>
-          <nav class="navegacion ocultar">
-            <a href="#">Inicio</a>
-            <a href="#">Catalogo</a>
-            <a href="#">Sobre Nosotros</a>
-            <a href="#">Contacto</a>
-          </nav>
-          <div class="menuh"><span></span><span></span><span></span></div>
-        </div>
-      </div>
-      <div class="contenido-header">
-        <div class="contenedor-encabezado">
-          <div class="texto-encabezado">
-            <img data-src="/assets/Logo.webp" alt="" class="logovideo" />
-            <a href="#" class="btn bordes">Catálogo</a>
-          </div>
-          <video autoplay loop muted>
-            <source src="assets/Video.mp4" />
-          </video>
-        </div>
-      </div>
-    </header>
 
-    <div class="contenedor-nosotros contenedor">
-      <div class="texto-nosotros">
-        <h1 class="L">LALA</h1>
-        <h2 class="hm">Hecho a Mano</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-          recusandae at excepturi perferendis porro maiores expedita voluptatum
-          officiis itaque magnam explicabo a non distinctio voluptate quam.
-          Doloribus minus tempore reiciendis.
-        </p>
-      </div>
-      <div class="imangenes-nosotros">
-        <div class="imagen1">
-          <img data-src="/assets/LALA imagen-ejemplo-nosotros.webp" alt="" />
+    <section class="inicio" id="inicio">
+      <header class="encabezado">
+        <div class="contenedor-navegacion">
+          <div class="contenido-navegacion contenedor">
+            <div class="logo">
+              <img
+                data-src="assets/Logo.webp"
+                alt="Logo de la pagina"
+                class="logochico"
+              />
+            </div>
+            <nav class="navegacion ocultar">
+              <a href="#inicio">Inicio</a>
+              <a href="#menu">Catalogo</a>
+              <a href="#nosotros">Sobre Nosotros</a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="menuh"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="contenido-header">
+          <div class="contenedor-encabezado">
+            <div class="texto-encabezado">
+              <img data-src="/assets/Logo.webp" alt="" class="logovideo" />
+              <a href="#menu" class="btn bordes">Catálogo</a>
+            </div>
+            <video autoplay loop muted>
+              <source src="assets/Video.mp4" />
+            </video>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <div class="contenedor-nosotros contenedor">
+        <div class="texto-nosotros">
+          <h1 class="L">LALA</h1>
+          <h2 class="hm">Hecho a Mano</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            recusandae at excepturi perferendis porro maiores expedita voluptatum
+            officiis itaque magnam explicabo a non distinctio voluptate quam.
+            Doloribus minus tempore reiciendis.
+          </p>
+        </div>
+        <div class="imangenes-nosotros">
+          <div class="imagen1">
+            <img class="pareja" data-src="/assets/LALA imagen-ejemplo-nosotros.webp" alt="" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    
 
-    <section class="menu contenedor">
+    <section class="menu contenedor" id="menu">
       <h2 class="texto-catalogo">Catálogo</h2>
       <div class="botones-catalogo">
         <button class="todos btn-cat">Todos</button>
@@ -97,7 +103,7 @@
           <p>Encargo con un minimo de 48hs de anticipación.</p>
           <div class="precio">
             <p>$900</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -107,7 +113,7 @@
           <p>Encargo con un minimo de 48hs de anticipación.</p>
           <div class="precio">
             <p>$1.500</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -117,7 +123,7 @@
           <p>Encargo con un minimo de 48hs de anticipación.</p>
           <div class="precio">
             <p>$1.500</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -127,7 +133,7 @@
           <p>Encargo con un minimo de 48hs de anticipación.</p>
           <div class="precio">
             <p>$950</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -141,7 +147,7 @@
           <p>Encargo con un minimo de 48hs de anticipación.</p>
           <div class="precio">
             <p>$1.300</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -155,7 +161,7 @@
           <p>Encargo con un minimo de 48hs de anticipación.</p>
           <div class="precio">
             <p>$800</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -165,7 +171,7 @@
           <p>Encargo con un minimo de 7 días de anticipación.</p>
           <div class="precio">
             <p>$800</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -179,7 +185,7 @@
           <p>Consultar stock</p>
           <div class="precio">
             <p>$800</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -189,7 +195,7 @@
           <p>Consultar disponibilidad de diseño.</p>
           <div class="precio">
             <p>$700</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -206,7 +212,7 @@
           </p>
           <div class="precio">
             <p>$300</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -216,7 +222,7 @@
           <p>Cantidad mínima 10 unidades, consultar formas.</p>
           <div class="precio">
             <p>$200</p>
-            <button>Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
@@ -229,43 +235,49 @@
           </p>
           <div class="precio">
             <p></p>
-            <button onclick="location.href='https://drive.google.com/drive/my-drive'">Encargar</button>
+            <a href="https://api.whatsapp.com/send?phone=543814481862&app=facebook&entry_point=page_cta&fbclid=IwAR2It4ABivJGeaRG7uc3B5qliKfBGkQ_Alp39q6SK6DsDkeYpqFBX0CnIYM" target="_blank"> <button>Encargar</button></a>
           </div>
         </div>
         <!------------------------------------------------------------------------------------------>
       </div>
     </section>
 
-    <div class="contacto contenedor">
-      <div class="informacion-contacto">
-        <h3>Contactanos</h3>
-        <p><i class="fa-solid fa-location-dot"></i>Tafi Viejo - Tucuman</p>
-        <p><i class="fa-solid fa-envelope"></i>LalaHechoaMano@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i>+543817623434</p>
-        <div class="redes-sociales">
-          <a href="https://www.facebook.com/Lala-Hecho-a-mano-115186766951241"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/lala.hechoamano/"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+    <section class="contacto" id="contacto">
+      <div class="contacto contenedor">
+        <div class="informacion-contacto">
+          <h3>Contactanos</h3>
+          <p><i class="fa-solid fa-location-dot"></i>Tafi Viejo - Tucuman</p>
+          <p><i class="fa-solid fa-envelope"></i>lala.hechoamano@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+54 381 448-1862</p>
+          <div class="redes-sociales">
+            <a href="https://www.facebook.com/Lala-Hecho-a-mano-115186766951241" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/lala.hechoamano/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="pie-pagina">
         <div class="contenedor-piepagina contenedor">
             <div class="info">
-                <h3>Dirección</h3>
+                <h3>Dirección -</h3>
                 <h3>Tafi Viejo - Tucuman</h3> 
             </div>
             <div class="info">
                 <h3>Podés realizar tu pedido</h3>
-                <h3>al número +543817623434</h3> 
+                <h3>al número +543814481862</h3> 
             </div>
             <div class="info">
                 <h3>Horarios de Atención</h3>
-                <h3>Lunes a Viernes de 8hs a 20hs </h3> 
+                <h3>Lunes a Viernes de 9hs a 21hs </h3> 
+            </div>
+            <div class="info">
+                <h3>Para realizar el pedido </h3>
+                <h3>Por favor con 72hs de anticipación</h3> 
             </div>
         </div>
     </div>
