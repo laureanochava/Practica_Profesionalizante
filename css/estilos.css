@@ -6,10 +6,17 @@
     --blanco: #fff; 
     --oscuro: #311f11 ;
 
-    --titulos: 'Montserrat';
-    --parrafo: 'Mulish';  
-    --HaM: 'Fasthand'; 
     background-color: #ffe8cd;
+}
+
+@font-face {
+    font-family: acidGR;
+    src: url(../aka-acidgr-realadult.otf)
+}
+
+@font-face {
+    font-family: alata;
+    src: url(../alata-regular.ttf);
 }
 html{
     box-sizing: border-box;
@@ -50,6 +57,7 @@ h3,p,a{
     top:0;
     right:50px;
     user-select: none;
+    font-family: alata;
 }
 .btnCerrar:hover{
     cursor: pointer;
@@ -78,6 +86,7 @@ h3,p,a{
     text-decoration: none;
     color: var(--naranja4);
     font-size: 2.5rem;
+    font-family: alata;
     text-transform: capitalize;
     padding: 1rem 3rem;
     border-radius: 7px;
@@ -131,6 +140,7 @@ img{
 .navegacion a{
     color: var(--oscuro);
     text-decoration: none;
+    font-family: alata;
     font-size: 3rem;
     padding: 1.5rem;
     display: block;   
@@ -278,24 +288,31 @@ video{
 }
 
 .texto-nosotros p{
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: left;
-    margin: 4rem 2rem;
-    color: var(--oscuro); 
+    margin: 2rem 2rem;
+    color: var(--oscuro);
+    font-family: acidGR;
+   
 }
 
 .texto-nosotros h1{
     font-size: 4rem;
     text-align: left;
-    margin: 1rem;
+    margin: 1rem 2rem;
     color: var(--oscuro); 
+    font-family: alata;
+    
+    
 }
 
 .texto-nosotros h2{
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: left;
-    margin: 1rem;
+    margin: 1rem 2rem;
     color: var(--oscuro); 
+    font-family: acidGR;
+    
 }
 
 
@@ -305,8 +322,11 @@ video{
 .texto-catalogo{
     text-align: center;
     font-size: 5rem;
-    color: var(--oscuro); 
-   
+    background-color: #311f11;
+    color: #ffa333;
+    font-family: alata; 
+    padding: 3rem;
+   border-radius: 5px;
 }
  
 /*------------------------------------------------------------------------------------------------------------*/
@@ -349,7 +369,9 @@ video{
     border-color: var(--naranja1);
     border-width: .5px;
     border-style: solid;
+    border-color: #311f11;
     margin-bottom: 2rem; 
+    font-family: alata;
 }
 
 .botones-catalogo .btn-cat:hover{
@@ -388,12 +410,13 @@ video{
 .articulo h2{
     text-align: center;
     color: var(--oscuro);
+    font-family: alata;
 
 }
 
 .articulo p{
-    font-size: 1.5 rem;
-    font-style: oblique;
+    font-size: 30px;
+    font-family: acidGR;
     color: var(--oscuro);
 }
 
@@ -408,8 +431,7 @@ video{
 
 .precio p{
     font-style: normal;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 6rem;
     color: var(--oscuro);
 }
 
@@ -423,13 +445,16 @@ video{
     border-color: var(--naranja1);
     border-width: .5px;
     border-style: solid;
+    border-color: #311f11;
     margin-bottom: 2rem;
-    margin-top: 4rem; 
+    margin-top: 10rem; 
+    font-family: alata;
 }
 
 .precio button:hover{
     background-color: #311f11;
     color: #ffd19b;
+    border-color: #ffa333;
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
@@ -440,7 +465,7 @@ video{
     flex: 0 0 calc(50% - 1rem);
     text-align: center; 
     background-color: #311f11;
-    height: 37rem;
+    height: 43rem;
     border-radius: 5px;
 }
 .informacion-contacto h3, p, i{
@@ -452,9 +477,11 @@ video{
 .informacion-contacto h3{
     font-size: 4rem;
     margin-top: 4rem;
+    font-family: alata; 
 }
 .informacion-contacto p{
-    font-size: 2rem;
+    font-size: 4rem;
+    font-family: acidGR;
 }
 .informacion-contacto i{
     margin-right: 1rem;
@@ -489,6 +516,7 @@ video{
 .info h3, .info p{
     color: #311f11;
     text-align: center;
+    font-family: alata; 
 }
 .info h3{
     font-size: 1.5rem;
@@ -508,5 +536,6 @@ video{
 
 .footer h3{
     font-size: 1rem;
+    font-family: alata; 
 }
 
